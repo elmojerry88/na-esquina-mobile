@@ -1,16 +1,22 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import SplashScreens from '@/screens/SplashScreens/SplashScreens';
 import LoginScreen from '@/screens/AuthScreens/LoginScreen';
+import SelectAccountScreen from '@/screens/SplashScreens/SelectAccountScreen';
 
 const Stack = createNativeStackNavigator();
 export function AuthRoutes(){
 
-    const isFirstTime = false;
+    const isFirstTime = true;
 
     return(
         <Stack.Navigator initialRouteName={isFirstTime? 'intro' : 'login'}>
             <Stack.Screen name="intro" 
                 component={SplashScreens} 
+                options={{ 
+                headerShown: false,
+            }}/>
+            <Stack.Screen name="select-account" 
+                component={SelectAccountScreen} 
                 options={{ 
                 headerShown: false,
             }}/>

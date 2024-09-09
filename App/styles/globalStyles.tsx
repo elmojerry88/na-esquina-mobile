@@ -1,6 +1,6 @@
 import { StyleSheet } from 'react-native';
 import { ms, vs } from './Responsive';
-import { Colors } from './Colors';
+import { colors } from './Colors';
 
 
 export const styles = StyleSheet.create({
@@ -10,17 +10,17 @@ export const styles = StyleSheet.create({
     title: {
         fontFamily: "Kavoon_400Regular",
         fontSize: ms(50),
-        color: Colors.DarknessBlue,
+        color: colors.darkBlue_500,
         marginLeft: 25,
     },
     subtitle: {
         fontFamily: 'Kavoon_400Regular',
         fontSize: 30,
-        color: Colors.White,
+        color: colors.white,
     },
     text3: {
         fontFamily: "Kavoon_400Regular",
-        color: Colors.White,
+        color: colors.white,
     },
 
     fundo: {
@@ -38,13 +38,23 @@ export const styles = StyleSheet.create({
     smallText: {
         fontSize: 20,
         fontFamily: 'Kavoon_400Regular',
-        color: Colors.White,
+        color: colors.white,
      
     },
     BigText: {
         fontSize: 15,
         fontFamily: 'Kavoon_400Regular',
-        color: 'white',
-    }
+        color: colors.white,
+    },
+    box: {
+        width: vs(285),
+        height: vs(250),
+        borderRadius: 40,
+        backgroundColor: colors.whiteBlue_200,
+        marginLeft: vs(15),
+        marginRight: vs(15),
+        marginTop: vs(5),
+        opacity: 0.8
+    },
 
 });

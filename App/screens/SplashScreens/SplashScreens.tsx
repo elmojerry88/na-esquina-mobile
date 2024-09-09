@@ -2,13 +2,13 @@ import { Image, Text, View } from "react-native";
 import { LinearGradient } from 'expo-linear-gradient';
 import { styles } from "@/styles/globalStyles";
 import { Button } from "@/components/button/Button";
-import { Colors } from "@/styles/Colors";
+import { colors } from "@/styles/Colors";
 
-export default function SplashScreens(){
+export default function SplashScreens({ navigation }){
 
     return(
         <LinearGradient 
-            className="h-full flex-col" colors={[Colors.WhiteBlue, Colors.LigthMidBlue, Colors.DarkBlue] }
+            className="h-full flex-col" colors={[colors.whiteBlue_200, colors.whiteBlue_300, colors.darkBlue_400]}
             style={[styles.container, {
                 flexDirection: 'column',}
             ]}
@@ -59,8 +59,9 @@ export default function SplashScreens(){
                         borderRadius: 30,
                         marginTop: 3,
                         marginLeft: 30,
-                        backgroundColor: Colors.LightBlue
+                        backgroundColor: colors.whiteBlue_300
                     }}
+                    onPress={() => navigation.navigate('select-account')}
                 />
 
             </View>
@@ -73,10 +74,7 @@ export default function SplashScreens(){
             >
 
                 <Image source={require('assets/splash/yacht.png')} 
-                style={styles.yacht}
-                className="opacity-40"
-                />
-
+                style={styles.yacht}/>
             </View>
          </LinearGradient>
     )
