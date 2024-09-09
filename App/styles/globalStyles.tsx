@@ -48,7 +48,7 @@ export const styles = StyleSheet.create({
     },
     box: {
         width: vs(285),
-        height: vs(250),
+        height: vs(220),
         borderRadius: 40,
         backgroundColor: colors.whiteBlue_200,
         marginLeft: vs(15),

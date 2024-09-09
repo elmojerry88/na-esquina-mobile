@@ -9,46 +9,22 @@ export default function Intro({ navigation }){
     return(
         <LinearGradient 
             className="h-full flex-col" colors={[colors.whiteBlue_200, colors.whiteBlue_300, colors.darkBlue_400]}
-            style={[styles.container, {
-                flexDirection: 'column',}
-            ]}
-        >
+            style={[styles.container, {flexDirection: 'column',}]}>
 
-            <View 
-                style={{
-                    flex: 4,
-                    alignItems: "center",
-                    marginTop: 20,
-                }}>
-
+            <View style={{flex: 4, alignItems: "center", marginTop: 20,}}>
                 <Image 
                     source={require('assets/splash/fundo-01.png')} 
                     style={styles.fundo}
-                    className=""
-                />
+                    className=""/>
             </View>
-
             <View 
-                style={{
-                    flex: 3,
-                    marginTop: 30,
-                }}>
-                
-                <Text 
-                    style={styles.title}
-                    >
+                style={{flex: 3, marginTop: 30,}}>
+                <Text style={styles.title}>
                         Olá, {"\n"} Bem-vindo/a 
                 </Text>
-                
-                <Text 
-                    className=""
-                    style={[styles.subtitle, {
-                        marginLeft: 30,
-                    }]}
-                    >
+                <Text style={[styles.subtitle, {marginLeft: 30,}]}>
                         a sua loja online
                 </Text>
-
                 <Button 
                     label="Começar"
                     style={{ 
@@ -63,18 +39,11 @@ export default function Intro({ navigation }){
                     }}
                     onPress={() => navigation.navigate('select-account')}
                 />
-
             </View>
-
             <View 
-                style={{
-                    flex: 3,
-                    justifyContent: 'center',
-                }}
-            >
-
+                style={{flex: 3,justifyContent: 'center',}}>
                 <Image source={require('assets/splash/yacht.png')} 
-                style={styles.yacht}/>
+                    style={styles.yacht}/>
             </View>
          </LinearGradient>
     )

@@ -26,21 +26,51 @@ export default function SelectAccount({ navigation }){
                     <Button 
                         label='Criar Loja'
                         style={{
-                            width: 250,
+                            width: 300,
                             alignItems: 'center',
                             justifyContent: "center",
                             alignSelf: "center",
-                            height: 40,
+                            height: 50,
                             borderRadius: 30,
                             marginTop: 5,
                             backgroundColor: colors.darkBlue_500,
                         }}
-                        onPress={() => navigation.navigate('select-account')}
-                        labelSize={{fontSize:35}}
+                        onPress={() => navigation.navigate('create-store')}
+                        labelSize={{fontSize:40}}
                     />
+                    <View style={{marginLeft: ms(25), alignItems: 'center', justifyContent: 'center'}}>
+                        <Text style={[styles.subtitle, {fontSize: vs(19), marginTop: 1}]}>Já tem uma loja? 
+                            <Button label=' faça login' onPress={() => navigation.navigate('login-store')} 
+                            labelSize={{fontSize: vs(18)}} colorText={{color: colors.darkBlue_500}}/>
+                        </Text>
+                    </View>
                 </View>
-                <View style={[styles.box, {height: ms(230),marginTop: vs(15),}]}>
-
+                <View style={[styles.box, {height: ms(250),marginTop: vs(15),}]}>
+                    <Text style={[styles.title, {marginTop: ms(5), fontSize: ms(43)}]}>Junte-se 
+                        <Text style={[styles.title, {color: colors.white, fontSize: ms(43)}]}> aos nossos clientes
+                            </Text> satisfeitos
+                    </Text>
+                    <Button 
+                        label='Criar conta'
+                        style={{
+                            width: 300,
+                            alignItems: 'center',
+                            justifyContent: "center",
+                            alignSelf: "center",
+                            height: 50,
+                            borderRadius: 30,
+                            marginTop: 5,
+                            backgroundColor: colors.darkBlue_500,
+                        }}
+                        onPress={() => navigation.navigate('create-user')}
+                        labelSize={{fontSize:40}}
+                    />
+                    <View style={{marginLeft: ms(25), alignItems: 'center', justifyContent: 'center'}}>
+                        <Text style={[styles.subtitle, {fontSize: vs(19), marginTop: 1}]}>Já tem uma conta? 
+                            <Button label=' faça login' onPress={()=> navigation.navigate('login-user')} 
+                            labelSize={{fontSize: vs(18)}} colorText={{color: colors.darkBlue_500}}/>
+                        </Text>
+                    </View>
                 </View>
          </LinearGradient>
     )
