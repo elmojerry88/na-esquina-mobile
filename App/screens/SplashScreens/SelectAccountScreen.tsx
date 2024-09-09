@@ -4,24 +4,6 @@ import { styles } from "@/styles/globalStyles";
 import { colors } from "@/styles/Colors";
 import { ms, vs } from "@/styles/Responsive";
 
-const style = StyleSheet.create({
-    image : {
-        width: vs(160),
-        height: vs(200),
-        margin: vs(0)
-    },
-    box: {
-        width: vs(285),
-        height: vs(250),
-        borderRadius: 40,
-        backgroundColor: colors.whiteBlue_200,
-        marginLeft: vs(15),
-        marginRight: vs(15),
-        marginTop: vs(5),
-    },
-    
-})
-
 export default function SelectAccountScreen({ navigation }){
     return(
         <LinearGradient 
@@ -34,7 +16,7 @@ export default function SelectAccountScreen({ navigation }){
                     <Text style={[styles.subtitle, {marginLeft: ms(25),fontSize: ms(25)}]}>para entrar na 
                         <Text style={{color: colors.darkBlue_500}}> vibe</Text></Text>
                 </View>
-                <View style={style.box}>
+                <View style={styles.box}>
                     <Text style={[styles.title, {color: colors.darkBlue_500, fontSize: ms(40), margin: 5}]}>Venda 
                         <Text style={{color: colors.white}}> de maneira</Text> eficiente</Text>
 

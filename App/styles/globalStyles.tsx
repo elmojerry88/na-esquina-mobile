@@ -54,7 +54,6 @@ export const styles = StyleSheet.create({
         marginLeft: vs(15),
         marginRight: vs(15),
         marginTop: vs(5),
-        opacity: 0.8
     },
 
 });
