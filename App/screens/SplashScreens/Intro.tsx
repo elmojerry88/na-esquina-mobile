@@ -4,7 +4,7 @@ import { styles } from "@/styles/globalStyles";
 import { Button } from "@/components/button/Button";
 import { colors } from "@/styles/Colors";
 
-export default function SplashScreens({ navigation }){
+export default function Intro({ navigation }){
 
     return(
         <LinearGradient 

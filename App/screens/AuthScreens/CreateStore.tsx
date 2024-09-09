@@ -1,11 +1,10 @@
 
 import { View, Text, ScrollView} from "react-native";
 
-export default function HomeScreen(){
+export default function CreateStore(){
     return (
         <ScrollView className="mt-8">
-            <Text>HomeSreen</Text>
+            <Text>Create store Screen</Text>
         </ScrollView>
     )
 }
-

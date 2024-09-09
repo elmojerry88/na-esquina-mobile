@@ -1,7 +1,7 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import SplashScreens from '@/screens/SplashScreens/SplashScreens';
-import LoginScreen from '@/screens/AuthScreens/LoginScreen';
-import SelectAccountScreen from '@/screens/SplashScreens/SelectAccountScreen';
+import Intro from '@/screens/SplashScreens/Intro';
+import LoginUser from '@/screens/AuthScreens/LoginUser';
+import SelectAccount from '@/screens/SplashScreens/SelectAccount';
 
 const Stack = createNativeStackNavigator();
 export function AuthRoutes(){
@@ -11,17 +11,17 @@ export function AuthRoutes(){
     return(
         <Stack.Navigator initialRouteName={isFirstTime? 'intro' : 'login'}>
             <Stack.Screen name="intro" 
-                component={SplashScreens} 
+                component={Intro} 
                 options={{ 
                 headerShown: false,
             }}/>
             <Stack.Screen name="select-account" 
-                component={SelectAccountScreen} 
+                component={SelectAccount} 
                 options={{ 
                 headerShown: false,
             }}/>
             <Stack.Screen name="login" 
-                component={LoginScreen} 
+                component={LoginUser} 
                 options={{ 
                 headerShown: false,
             }}
@@ -29,7 +29,3 @@ export function AuthRoutes(){
       </Stack.Navigator>
     )
 }
-
-
-//Só chama as splashScreens quando aperta para criar uma conta
-// Verificar se é a primeira vez do usuário na aplicação

@@ -4,9 +4,7 @@ import { ViewContainerProps } from "./types";
 const styles = StyleSheet.create({
     container: {
         flex: 3,
-        
     }
-
 })
 
 
