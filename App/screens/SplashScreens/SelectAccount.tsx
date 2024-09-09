@@ -62,7 +62,7 @@ export default function SelectAccount({ navigation }){
                             marginTop: 5,
                             backgroundColor: colors.darkBlue_500,
                         }}
-                        onPress={() => navigation.navigate('create-user')}
+                        onPress={() => navigation.navigate('intro-user')}
                         labelSize={{fontSize:40}}
                     />
                     <View style={{marginLeft: ms(25), alignItems: 'center', justifyContent: 'center'}}>
