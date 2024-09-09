@@ -19,21 +19,21 @@ export default function IntroUser( {navigation} ){
         </View>
         <View style={{marginTop: vs(5),}}>
             <View style={[styles.box, {height: ms(170), borderRadius: 30, 
-                backgroundColor: colors.whiteBlue_200}]}>
+                backgroundColor: colors.darkBlue_400}]}>
                     <Text style={[styles.title, {fontSize: vs(45), color: colors.white, marginTop: ms(5)}]}>
-                        Entregas super <Text style={[styles.title, {fontSize: vs(45)}]}> rápidas</Text>
+                        Entregas super <Text style={[styles.title, {fontSize: vs(45), color: colors.ligthBlue_100}]}> rápidas</Text>
                     </Text>
                     <Text style={[styles.subtitle, {fontSize: vs(19), marginLeft: ms(25)}]}>
                         estamos ansiosos para atendê-lo, o mais rápido possivel</Text>
 
             </View>
             <View style={[styles.box, {height: ms(100), marginTop: vs(15), 
-                borderRadius: 30, backgroundColor: colors.whiteBlue_200}]}>
+                borderRadius: 30, backgroundColor:  colors.darkBlue_400}]}>
                     <Text style={[styles.title, {fontSize: vs(40), marginTop: ms(5), color: colors.white}]}>A sua 
-                        <Text style={[styles.title, {fontSize: vs(40)}]}> satisfação</Text>
+                        <Text style={[styles.title, {fontSize: vs(40), color: colors.ligthBlue_100}]}> satisfação</Text>
                     </Text>
                     <Text style={[styles.subtitle, {fontSize: vs(30), marginLeft: ms(25)}]}>
-                        é a nossa <Text style={{color: colors.darkBlue_500}}> missão</Text>
+                        é a nossa <Text style={{color: colors.ligthBlue_100}}> missão</Text>
                     </Text>
             </View>
         </View>
