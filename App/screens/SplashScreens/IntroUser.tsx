@@ -53,7 +53,7 @@ export default function IntroUser( {navigation} ){
                             borderRadius: 30,
                             marginTop: vs(80),
                             backgroundColor: colors.darkBlue_400}}
-                        onPress={() => navigation.navigate('login-user')}
+                        onPress={() => navigation.navigate('create-user')}
                         icon={<AntDesign name="arrowright" size={24} color='white'/>}/>
                     </View>
             </ImageBackground>
