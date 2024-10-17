@@ -24,8 +24,8 @@ export default function IntroStore( {navigation} ){
                         negócio
                     </Text>
                     <Text style={[styles.subtitle, {fontSize: vs(18), marginLeft: ms(25)}]}>
-                        tenha a sua loja, visível para um público crescente e diversigficado</Text>
-
+                        tenha a sua loja, visível para um público crescente e diversigficado
+                    </Text>
             </View>
             <View style={[styles.box, {height: ms(100), marginTop: vs(15), 
                 borderRadius: 30, backgroundColor:  colors.darkBlue_400}]}>

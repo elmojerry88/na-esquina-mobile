@@ -9,13 +9,13 @@ export const styles = StyleSheet.create({
     },
     title: {
         fontFamily: "Kavoon_400Regular",
-        fontSize: ms(50),
+        fontSize: ms(55),
         color: colors.darkBlue_500,
-        marginLeft: 25,
+        marginLeft: ms(25),
     },
     subtitle: {
         fontFamily: 'Kavoon_400Regular',
-        fontSize: 30,
+        fontSize: ms(30),
         color: colors.white,
     },
     text3: {
@@ -36,13 +36,13 @@ export const styles = StyleSheet.create({
         marginTop: vs(40),
     },
     smallText: {
-        fontSize: 20,
+        fontSize: ms(20),
         fontFamily: 'Kavoon_400Regular',
         color: colors.white,
      
     },
     BigText: {
-        fontSize: 15,
+        fontSize: ms(15),
         fontFamily: 'Kavoon_400Regular',
         color: colors.white,
     },
